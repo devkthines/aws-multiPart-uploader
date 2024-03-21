@@ -41,10 +41,10 @@ export async function POST(request: Request) {
 
   try {
     const client = new S3Client({
-      region: process.env.AWS_REGION,
+      region: process.env.REGION,
       credentials: fromCognitoIdentityPool({
-        clientConfig: { region:process.env.AWS_REGION },
-        identityPoolId: process.env.AWS_IDENTITYPOOL_ID,
+        clientConfig: { region:process.env.REGION },
+        identityPoolId: process.env.IDENTITYPOOL_ID,
       }),
       // credentials: {
       //   accessKeyId: "AKIA5SPBTTURUSEMQI7B",
@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     const uploadId = uuidv4();
 
     const multipartUpload = await client.send(new CreateMultipartUploadCommand({
-      Bucket: process.env.AWS_BUCKET_NAME,
+      Bucket: process.env.BUCKET_NAME,
       Key: `${folder}/${file.name}`,
       ContentType: file.type,
     }));
@@ -78,7 +78,7 @@ export async function POST(request: Request) {
           const chunkBuffer = await chunk.arrayBuffer();
 
           const uploadPartCommand = new UploadPartCommand({
-            Bucket: process.env.AWS_BUCKET_NAME,
+            Bucket: process.env.BUCKET_NAME,
             Key: `${folder}/${file.name}`, // Include the folder in the object key
             UploadId,
             Body: Buffer.from(chunkBuffer),
@@ -103,7 +103,7 @@ export async function POST(request: Request) {
 
         await client.send(
           new CompleteMultipartUploadCommand({
-            Bucket: process.env.AWS_BUCKET_NAME,
+            Bucket: process.env.BUCKET_NAME,
             Key: `${folder}/${file.name}`, // Include the folder in the object key
             UploadId,
             MultipartUpload: {
