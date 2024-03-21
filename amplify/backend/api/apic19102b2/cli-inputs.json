@@ -3,7 +3,7 @@
   "paths": {
     "/upload": {
       "name": "/upload",
-      "lambdaFunction": "multipart400397a6",
+      "lambdaFunction": "multipartad13157d",
       "permissions": {
         "setting": "open"
       }

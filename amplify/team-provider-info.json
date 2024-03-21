@@ -20,11 +20,14 @@
         "multipart1da425f2": {
           "deploymentBucketName": "amplify-multipart-dev-132432-deployment",
           "s3Key": "amplify-builds/multipart1da425f2-7464436c4574657a6450-build.zip"
+        },
+        "multipartad13157d": {
+          "deploymentBucketName": "amplify-multipart-dev-132432-deployment",
+          "s3Key": "amplify-builds/multipartad13157d-666b44505253347a6871-build.zip"
         }
       },
       "api": {
-        "api53022fa0": {},
-        "api21a505ac": {}
+        "apic19102b2": {}
       }
     }
   }

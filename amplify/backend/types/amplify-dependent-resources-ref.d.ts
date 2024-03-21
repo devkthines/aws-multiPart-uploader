@@ -1,11 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "api21a505ac": {
-      "ApiId": "string",
-      "ApiName": "string",
-      "RootUrl": "string"
-    },
-    "api53022fa0": {
+    "apic19102b2": {
       "ApiId": "string",
       "ApiName": "string",
       "RootUrl": "string"
@@ -20,6 +15,13 @@ export type AmplifyDependentResourcesAttributes = {
       "Region": "string"
     },
     "multipart400397a6": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    },
+    "multipartad13157d": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
