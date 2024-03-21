@@ -1,8 +1,8 @@
 "use client";
 import { useState, useRef } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
-import Login from "../components/login";
-import Logout from "../components/logout";
+// import Login from "../components/login";
+// import Logout from "../components/logout";
 import { FaCopy } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 // import { getSession } from '@auth0/nextjs-auth0';
@@ -205,28 +205,28 @@ setSecondDropdownDisabled(true); // Disable the second dropdown
     }
   };
 
-  if (isLoading)
-    return (
-      <main>
-        <div>Loading...</div>
-      </main>
-    );
-  if (error)
-    return (
-      <main>
-        <div>{error.message}</div>
-      </main>
-    );
+  // if (isLoading)
+  //   return (
+  //     <main>
+  //       <div>Loading...</div>
+  //     </main>
+  //   );
+  // if (error)
+  //   return (
+  //     <main>
+  //       <div>{error.message}</div>
+  //     </main>
+  //   );
 
   return (
     <main>
-      {user ? (
+      {/* {user ? ( */}
         <>
           <div>
             <h1>Upload a File to S3</h1>
             <div className="flex justify-evenly">
-              <h3>Username: {user.name}</h3>
-              <Logout />
+              {/* <h3>Username: {user.name}</h3> */}
+              {/* <Logout /> */}
             </div>
             <div>
               <div>
@@ -307,9 +307,9 @@ setSecondDropdownDisabled(true); // Disable the second dropdown
             </div>
           </div>
         </>
-      ) : (
-        <Login />
-      )}
+      {/* // ) : (
+      //   <Login />
+      // )} */}
     </main>
   );
 }
