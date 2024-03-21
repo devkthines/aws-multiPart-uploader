@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/upload": {
+      "name": "/upload",
+      "lambdaFunction": "multipart1da425f2",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
