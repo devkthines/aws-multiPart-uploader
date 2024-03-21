@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef } from "react";
-import { useUser } from "@auth0/nextjs-auth0/client";
+// import { useUser } from "@auth0/nextjs-auth0/client";
 // import Login from "../components/login";
 // import Logout from "../components/logout";
 import { FaCopy } from "react-icons/fa";
@@ -48,7 +48,7 @@ export default function Page() {
   const [userLink, setUserLink] = useState("");
   const [buttonDisabled, setButtonDisabled] = useState(true);
   const [copied, setCopied] = useState(false);
-  const { user, error, isLoading } = useUser();
+  // const { user, error, isLoading } = useUser();
   const [uploadSuccess, setUploadSuccess] = useState(false);
   const [selectedFolder, setSelectedFolder] = useState("");
   const [uploadStatus, setUploadStatus] = useState<{
