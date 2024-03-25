@@ -1,33 +1,22 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-multipart-dev-132432-authRole",
-      "UnauthRoleArn": "arn:aws:iam::992382796335:role/amplify-multipart-dev-132432-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::992382796335:role/amplify-multipart-dev-132432-authRole",
+      "AuthRoleName": "amplify-multipart-dev-142556-authRole",
+      "UnauthRoleArn": "arn:aws:iam::992382796335:role/amplify-multipart-dev-142556-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::992382796335:role/amplify-multipart-dev-142556-authRole",
       "Region": "us-west-1",
-      "DeploymentBucketName": "amplify-multipart-dev-132432-deployment",
-      "UnauthRoleName": "amplify-multipart-dev-132432-unauthRole",
-      "StackName": "amplify-multipart-dev-132432",
-      "StackId": "arn:aws:cloudformation:us-west-1:992382796335:stack/amplify-multipart-dev-132432/089c00d0-e7c1-11ee-8e34-0618c7a84ac1",
-      "AmplifyAppId": "d5is18jy5wsuy"
+      "DeploymentBucketName": "amplify-multipart-dev-142556-deployment",
+      "UnauthRoleName": "amplify-multipart-dev-142556-unauthRole",
+      "StackName": "amplify-multipart-dev-142556",
+      "StackId": "arn:aws:cloudformation:us-west-1:992382796335:stack/amplify-multipart-dev-142556/c6ad00c0-e892-11ee-b64f-029a38d18687",
+      "AmplifyAppId": "d3i2j0lq7khvb1"
     },
     "categories": {
       "function": {
-        "multipart400397a6": {
-          "deploymentBucketName": "amplify-multipart-dev-132432-deployment",
-          "s3Key": "amplify-builds/multipart400397a6-37426c303979556d3975-build.zip"
-        },
-        "multipart1da425f2": {
-          "deploymentBucketName": "amplify-multipart-dev-132432-deployment",
-          "s3Key": "amplify-builds/multipart1da425f2-7464436c4574657a6450-build.zip"
-        },
-        "multipartad13157d": {
-          "deploymentBucketName": "amplify-multipart-dev-132432-deployment",
-          "s3Key": "amplify-builds/multipartad13157d-666b44505253347a6871-build.zip"
+        "multiUploader": {
+          "deploymentBucketName": "amplify-multipart-dev-142556-deployment",
+          "s3Key": "amplify-builds/multiUploader-504e30445a6c316a4e30-build.zip"
         }
-      },
-      "api": {
-        "apic19102b2": {}
       }
     }
   }

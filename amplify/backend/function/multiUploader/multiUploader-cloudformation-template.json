@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "multipart1da425f2",
+            "multiUploader",
             {
               "Fn::Join": [
                 "",
                 [
-                  "multipart1da425f2",
+                  "multiUploader",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "multipartLambdaRole568dce60",
+            "multipartLambdaRole46dcf2cc",
             {
               "Fn::Join": [
                 "",
                 [
-                  "multipartLambdaRole568dce60",
+                  "multipartLambdaRole46dcf2cc",
                   "-",
                   {
                     "Ref": "env"

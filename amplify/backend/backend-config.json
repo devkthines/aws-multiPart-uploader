@@ -1,83 +1,25 @@
 {
-  "api": {
-    "apic19102b2": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "multipartad13157d"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    }
-  },
   "function": {
-    "multipart1da425f2": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "multipart400397a6": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "multipartad13157d": {
+    "multiUploader": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_multipart1da425f2_deploymentBucketName": {
+    "AMPLIFY_function_multiUploader_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "multipart1da425f2"
+          "resourceName": "multiUploader"
         }
       ]
     },
-    "AMPLIFY_function_multipart1da425f2_s3Key": {
+    "AMPLIFY_function_multiUploader_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "multipart1da425f2"
-        }
-      ]
-    },
-    "AMPLIFY_function_multipart400397a6_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "multipart400397a6"
-        }
-      ]
-    },
-    "AMPLIFY_function_multipart400397a6_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "multipart400397a6"
-        }
-      ]
-    },
-    "AMPLIFY_function_multipartad13157d_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "multipartad13157d"
-        }
-      ]
-    },
-    "AMPLIFY_function_multipartad13157d_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "multipartad13157d"
+          "resourceName": "multiUploader"
         }
       ]
     }
