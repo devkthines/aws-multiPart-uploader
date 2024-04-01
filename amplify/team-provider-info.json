@@ -17,6 +17,9 @@
           "deploymentBucketName": "amplify-multipart-dev-142556-deployment",
           "s3Key": "amplify-builds/multiUploader-504e30445a6c316a4e30-build.zip"
         }
+      },
+      "auth": {
+        "multipart82ad79f7": {}
       }
     }
   }
